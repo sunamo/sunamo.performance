@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -10,12 +10,12 @@ public class ManyStringReplacing
         var file = @"d:\_Test\sunamo.performance\FileManipulation.cs";
 
         StopwatchStatic.Start();
-        var content = File.ReadAllText(file);
-        StopwatchStatic.StopAndPrintElapsed("File.ReadAllText");
+        var content = FS.ReadAllText(file);
+        StopwatchStatic.StopAndPrintElapsed("FS.ReadAllText");
 
         /*
 TF.ReadFile takes 228ms
-File.ReadAllText takes 0ms
+FS.ReadAllText takes 0ms
 TF.ReadFileParallel takes 1ms
          */
 

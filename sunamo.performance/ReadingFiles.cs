@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -16,8 +16,8 @@ public class ReadingFiles
         var file2 = FS.InsertBetweenFileNameAndExtension(file, "2");
 
         StopwatchStatic.Start();
-        var content2 = File.ReadAllText(file2);
-        StopwatchStatic.StopAndPrintElapsed("File.ReadAllText");
+        var content2 = FS.ReadAllText(file2);
+        StopwatchStatic.StopAndPrintElapsed("FS.ReadAllText");
 
         var file3 = FS.InsertBetweenFileNameAndExtension(file, "2");
 
