@@ -11,7 +11,7 @@ using System.Text;
 using System.Collections.Concurrent;
 
 
-	internal class StringReplacing
+	public class StringReplacing
 	{
 		// Used http://stackoverflow.com/a/20285267/40868 as a template 
 		private static readonly Random Seed = new Random(42); //used a constant to keep result consistant
