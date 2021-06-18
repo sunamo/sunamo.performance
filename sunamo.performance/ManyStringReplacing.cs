@@ -22,7 +22,7 @@ TF.ReadFileParallel takes 1ms
 
 
         #region Replacement
-     
+
         #endregion
 
         /*
@@ -30,7 +30,7 @@ TF.ReadFileParallel takes 1ms
 ReplaceUnsafeUnmanaged takes 7532ms
 ReplaceAllSb 1242ms
  */
-
+        string replacePairs = "";
         var tuple = SH.SplitFromReplaceManyFormat(replacePairs);
         var from = SH.GetLines(tuple.Item1);
         var to = SH.GetLines(tuple.Item2);

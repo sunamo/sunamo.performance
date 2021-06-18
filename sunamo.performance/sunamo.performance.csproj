@@ -12,7 +12,6 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamoUnsafe\sunamoUnsafe\sunamo.unsafe.csproj" />
     <ProjectReference Include="..\..\sunamo\cmd\cmd.csproj" />
     <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj" />
   </ItemGroup>

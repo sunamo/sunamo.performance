@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\sunamo\sunamo\Helpers\Resource\RandomStringHelper.cs" Link="_sunamo\_sunamo\RandomStringHelper.cs" />
+    <Compile Include="..\..\sunamo\sunamo\Values\AllCharsConsts.cs" Link="_sunamo\_sunamo\AllCharsConsts.cs" />
+  </ItemGroup>
+
+</Project>

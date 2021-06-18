@@ -83,7 +83,9 @@ using System.Collections.Concurrent;
 		private static unsafe void UnsafeUnmanagedImplementation(string input, string oldValue, string[] newValues)
 		{
 		StringBuilder sb = new StringBuilder(input);
-;		  var res = SHUnsafe.ReplaceUnsafeUnmanaged(sb, oldValue, newValues);
+#if UNSAFE
+		var res = SHUnsafe.ReplaceUnsafeUnmanaged(sb, oldValue, newValues);
+#endif
 		int i = 0;
 		}
 
@@ -212,11 +214,13 @@ using System.Collections.Concurrent;
 		{
 			var implementations = new[]
 			{
-				//new Tuple<string, Action<string, string, string[]>>("Simple", SimpleImplementation),
-				//new Tuple<string, Action<string, string, string[]>>("SimpleParallel", SimpleParallelImplementation),
-				//new Tuple<string, Action<string, string, string[]>>("ParallelSubstring", ParallelSubstringImplementation),
-				//new Tuple<string, Action<string, string, string[]>>("Fredou unsafe", FredouImplementation),
-				new Tuple<string, Action<string, string, string[]>>("Unsafe+unmanaged_mem", UnsafeUnmanagedImplementation)
+				new Tuple<string, Action<string, string, string[]>>("Simple", SimpleImplementation),
+                new Tuple<string, Action<string, string, string[]>>("SimpleParallel", SimpleParallelImplementation),
+                new Tuple<string, Action<string, string, string[]>>("ParallelSubstring", ParallelSubstringImplementation),
+                new Tuple<string, Action<string, string, string[]>>("Fredou unsafe", FredouImplementation),
+#if UNSAFE
+				//new Tuple<string, Action<string, string, string[]>>("Unsafe+unmanaged_mem", UnsafeUnmanagedImplementation)
+#endif
 			};
 
 			Console.WriteLine(OutputFormat, "Implementation", "Average", "Seperate runs");

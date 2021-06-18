@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmd", "..\sunamo\cmd\cmd.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xlf", "..\sunamo\Xlf\Xlf.csproj", "{00B76D22-B82F-43FD-AC48-4B1F56E6910F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo.performanceWithoutSunamo", "sunamo.performanceWithoutSunamo\sunamo.performanceWithoutSunamo.csproj", "{EBE254D1-F5EA-4690-A57E-3FDDC68A65E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{00B76D22-B82F-43FD-AC48-4B1F56E6910F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B76D22-B82F-43FD-AC48-4B1F56E6910F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B76D22-B82F-43FD-AC48-4B1F56E6910F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE254D1-F5EA-4690-A57E-3FDDC68A65E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE254D1-F5EA-4690-A57E-3FDDC68A65E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE254D1-F5EA-4690-A57E-3FDDC68A65E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE254D1-F5EA-4690-A57E-3FDDC68A65E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
