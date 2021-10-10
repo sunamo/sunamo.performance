@@ -41,7 +41,7 @@ ReplaceAllSb 1242ms
         StopwatchStatic.StopAndPrintElapsed("ReplaceAll3");
 
         //StopwatchStatic.Start();
-        //var replaced2 = SHUnsafe.ReplaceUnsafeUnmanaged(new StringBuilder(content), from, to).ToString();
+        //var replaced2 = SHSecureStringHelper.ReplaceUnsafeUnmanaged(new StringBuilder(content), from, to).ToString();
         //StopwatchStatic.StopAndPrintElapsed("ReplaceUnsafeUnmanaged");
 
         //StopwatchStatic.Start();

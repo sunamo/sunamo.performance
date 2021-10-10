@@ -84,7 +84,7 @@ using System.Collections.Concurrent;
 		{
 		StringBuilder sb = new StringBuilder(input);
 #if UNSAFE
-		var res = SHUnsafe.ReplaceUnsafeUnmanaged(sb, oldValue, newValues);
+		var res = SHSecureStringHelper.ReplaceUnsafeUnmanaged(sb, oldValue, newValues);
 #endif
 		int i = 0;
 		}
