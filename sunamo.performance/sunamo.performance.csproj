@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version='1.0' encoding='utf-8'?>
+
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+   <TargetFramework>net5.0-windows</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -12,8 +13,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamo\cmd\cmd.csproj" />
-    <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj" />
+    <ProjectReference Include="..\..\sunamo\cmd\cmd.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj"></ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\sunamo\Xlf\Xlf.csproj">
