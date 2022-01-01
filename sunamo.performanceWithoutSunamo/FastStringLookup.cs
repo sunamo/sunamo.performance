@@ -92,7 +92,7 @@ public class FastStringLookup
         {
             sb.AppendLine(item.Value + " " + item.Key);
         }
-        File.WriteAllText(@"d:\Desktop\output.txt", sb.ToString());
+        TF.WriteAllText(@"d:\Desktop\output.txt", sb.ToString());
 
         end = DateTime.Now;
         Console.WriteLine();

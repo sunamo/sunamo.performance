@@ -28,7 +28,7 @@ public class ReadingFiles
         var file4 = FS.InsertBetweenFileNameAndExtension(file, "2");
 
         StopwatchStatic.Start();
-        var content4 = File.ReadAllLines(file4);
-        StopwatchStatic.StopAndPrintElapsed("File.ReadAllLines");
+        var content4 = TF.ReadAllLines(file4);
+        StopwatchStatic.StopAndPrintElapsed("TF.ReadAllLines");
     }
 }

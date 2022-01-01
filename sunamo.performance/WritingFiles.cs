@@ -9,7 +9,7 @@ public class WritingFiles
     {
         /*
 TF.SaveFile takes 101ms
-File.WriteAllText takes 8ms
+TF.WriteAllText takes 8ms
          */
 
         var file = @"d:\_Test\sunamo.performance\WritingSpeed\a.txt";
@@ -20,7 +20,7 @@ File.WriteAllText takes 8ms
         StopwatchStatic.StopAndPrintElapsed("TF.SaveFile");
 
         StopwatchStatic.Start();
-        File.WriteAllText( file, content);
-        StopwatchStatic.StopAndPrintElapsed("File.WriteAllText");
+        TF.WriteAllText( file, content);
+        StopwatchStatic.StopAndPrintElapsed("TF.WriteAllText");
     }
 }
