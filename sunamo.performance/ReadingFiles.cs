@@ -7,7 +7,7 @@ public class ReadingFiles
 {
     public static void ReadingFilesTest()
     {
-        var file = @"d:\_Test\sunamo.performance\FileManipulation.cs";
+        var file = @"D:\_Test\sunamo.performance\FileManipulation.cs";
 
         StopwatchStatic.Start();
         var content = TF.ReadFile(file);

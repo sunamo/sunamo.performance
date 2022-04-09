@@ -7,7 +7,7 @@ public class ManyStringReplacing
 {
     public static void MainManyStringReplacing()
     {
-        var file = @"d:\_Test\sunamo.performance\FileManipulation.cs";
+        var file = @"D:\_Test\sunamo.performance\FileManipulation.cs";
 
         StopwatchStatic.Start();
         var content = FS.ReadAllText(file);
