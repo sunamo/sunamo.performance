@@ -10,8 +10,8 @@ public class ReadingFiles
         var file = @"D:\_Test\sunamo.performance\FileManipulation.cs";
 
         StopwatchStatic.Start();
-        var content = TF.ReadFile(file);
-        StopwatchStatic.StopAndPrintElapsed("TF.ReadFile");
+        var content = TF.ReadAllText(file);
+        StopwatchStatic.StopAndPrintElapsed("TF.ReadAllText");
 
         var file2 = FS.InsertBetweenFileNameAndExtension(file, "2");
 
@@ -22,8 +22,8 @@ public class ReadingFiles
         var file3 = FS.InsertBetweenFileNameAndExtension(file, "2");
 
         StopwatchStatic.Start();
-        var content3 = TF.ReadFileParallel(file3, null, null);
-        StopwatchStatic.StopAndPrintElapsed("TF.ReadFileParallel");
+        var content3 = TF.ReadAllTextParallel(file3, null, null);
+        StopwatchStatic.StopAndPrintElapsed("TF.ReadAllTextParallel");
 
         var file4 = FS.InsertBetweenFileNameAndExtension(file, "2");
 

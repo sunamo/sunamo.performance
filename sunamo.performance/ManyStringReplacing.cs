@@ -14,9 +14,9 @@ public class ManyStringReplacing
         StopwatchStatic.StopAndPrintElapsed("FS.ReadAllText");
 
         /*
-TF.ReadFile takes 228ms
+TF.ReadAllText takes 228ms
 FS.ReadAllText takes 0ms
-TF.ReadFileParallel takes 1ms
+TF.ReadAllTextParallel takes 1ms
          */
 
 
@@ -52,7 +52,7 @@ ReplaceAllSb 1242ms
         //StopwatchStatic.StopAndPrintElapsed("ReplaceAllSb");
 
         StopwatchStatic.Start();
-        var replaced4 = TF.ReadFileParallel(file, from, to);
-        StopwatchStatic.StopAndPrintElapsed("TF.ReadFileParallel");
+        var replaced4 = TF.ReadAllTextParallel(file, from, to);
+        StopwatchStatic.StopAndPrintElapsed("TF.ReadAllTextParallel");
     }
 }
