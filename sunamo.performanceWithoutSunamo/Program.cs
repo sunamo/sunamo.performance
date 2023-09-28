@@ -1,5 +1,3 @@
-using System;
-
 namespace sunamo.performanceWithoutSunamo
 {
     class Program

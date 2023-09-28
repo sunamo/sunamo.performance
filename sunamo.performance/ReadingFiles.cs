@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
 public class ReadingFiles
 {
     public static void ReadingFilesTest()

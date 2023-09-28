@@ -1,16 +1,3 @@
-
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Diagnostics;
-using System.Text;
-using System.Collections.Concurrent;
-
-
 	public class StringReplacing
 	{
 		// Used http://stackoverflow.com/a/20285267/40868 as a template 
