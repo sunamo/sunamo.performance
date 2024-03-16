@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sunamo.performance", "sunam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sunamoUnsafe", "..\sunamoUnsafe\sunamoUnsafe\sunamo.unsafe.csproj", "{E09E8E74-2C46-40EB-A8CB-C2A4FF06A3FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\sunamo\sunamo\sunamo.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\sunamo\SunamoShared\SunamoShared.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmd", "..\sunamo\cmd\cmd.csproj", "{EA7FB898-AD1B-401D-AC59-29E1BF80564B}"
 EndProject

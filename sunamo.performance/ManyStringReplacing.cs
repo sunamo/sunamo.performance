@@ -26,13 +26,13 @@ ReplaceUnsafeUnmanaged takes 7532ms
 ReplaceAllSb 1242ms
  */
         string replacePairs = "";
-        var tuple = SH.SplitFromReplaceManyFormat(replacePairs);
-        var from = SH.GetLines(tuple.Item1);
-        var to = SH.GetLines(tuple.Item2);
+        var tuple = SHSplit.SplitFromReplaceManyFormat(replacePairs);
+        var from = SHGetLines.GetLines(tuple.Item1);
+        var to = SHGetLines.GetLines(tuple.Item2);
         var sb = new StringBuilder(content);
 
         StopwatchStatic.Start();
-        var replaced = SH.ReplaceAll3(from, to, false, content);
+        var replaced = SHReplace.ReplaceAll3(from, to, false, content);
         StopwatchStatic.StopAndPrintElapsed("ReplaceAll3");
 
         //StopwatchStatic.Start();
@@ -42,7 +42,7 @@ ReplaceAllSb 1242ms
         //StopwatchStatic.Start();
         //for (int i = 0; i < from.Count; i++)
         //{
-        //    sb = SH.ReplaceAllSb(sb, to[i], from[i]);
+        //    sb = SHReplace.ReplaceAllSb(sb, to[i], from[i]);
         //}
         //StopwatchStatic.StopAndPrintElapsed("ReplaceAllSb");
 

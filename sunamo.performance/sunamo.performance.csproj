@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -10,11 +10,11 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamo\cmd\cmd.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\sunamoWithoutLocalDep\cmd\cmd.csproj"></ProjectReference>
+    <PackageReference Include="SunamoShared" Version="*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamo\Xlf\Xlf.csproj">
+    <ProjectReference Include="..\..\sunamoWithoutLocalDep\Xlf\Xlf.csproj">
       <Project>{00B76D22-B82F-43FD-AC48-4B1F56E6910F}</Project>
       <Name>Xlf</Name>
     </ProjectReference>
