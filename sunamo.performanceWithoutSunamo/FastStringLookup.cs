@@ -1,3 +1,5 @@
+
+
 public class FastStringLookup
 {
     public const string StartingSearchingAHashSet = "Starting searching a HashSet... ";

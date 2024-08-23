@@ -1,3 +1,5 @@
+
+
 public class ManyStringReplacing
 {
     public static void MainManyStringReplacing()

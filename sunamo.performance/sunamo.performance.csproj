@@ -10,19 +10,20 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamoWithoutLocalDep\cmd\cmd.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\PlatformIndependentNuGetPackages\cmd\cmd.csproj">
+    </ProjectReference>
     <PackageReference Include="SunamoShared" Version="*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamoWithoutLocalDep\Xlf\Xlf.csproj">
+    <ProjectReference Include="..\..\PlatformIndependentNuGetPackages\Xlf\Xlf.csproj">
       <Project>{00B76D22-B82F-43FD-AC48-4B1F56E6910F}</Project>
       <Name>Xlf</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+    <DefineConstants>$(DefineConstants);ASYNC;sunamo.performance;sunamo.performance.csproj</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+    <DefineConstants>$(DefineConstants);ASYNC;sunamo.performance;sunamo.performance.csproj</DefineConstants>
   </PropertyGroup>
 </Project>

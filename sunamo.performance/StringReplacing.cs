@@ -1,3 +1,5 @@
+
+
 	public class StringReplacing
 	{
 		// Used http://stackoverflow.com/a/20285267/40868 as a template 
